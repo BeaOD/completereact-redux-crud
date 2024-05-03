@@ -1,4 +1,5 @@
 import React from "react";
+import './css/addUser.css'
 
 class AddUserForm  extends React.Component {
     constructor(props) {
@@ -40,7 +41,7 @@ class AddUserForm  extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>Name</label>
-                    <br />
+                     <br />
                     <input type='text' placeholder="name" name="name" value={this.state.name} onChange={this.handleChange}></input>
                 </div>
 
@@ -60,7 +61,7 @@ class AddUserForm  extends React.Component {
                 <button >Submit</button>
 
             </form>
-          );
+          )
     }
 }
  

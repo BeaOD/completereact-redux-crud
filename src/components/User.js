@@ -22,8 +22,8 @@ const User = (props) => {
 
   return (
     <>
-    <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+    <Modal show={show} onHide={handleClose} >
+        <Modal.Header closeButton style={{backgroundColor:'green'}}>
             <Modal.Title>
                 Edit User
             </Modal.Title>
@@ -38,10 +38,10 @@ const User = (props) => {
 
     <Col md='4' style={{marginBottom:'1rem'}}>
         <Card  >
-            <Card.Body>
+            <Card.Body style={{  borderRadius:'7px'}}>
               <Card.Title>Codetrain User</Card.Title>
-              <Card.Subtitle className="mb-2 text-muted">{props.userInfo.name}</Card.Subtitle>
-              <Card.Text>
+              <Card.Subtitle className="mb-2 text-muted" style={{ color:'green'}}>{props.userInfo.name}</Card.Subtitle>
+              <Card.Text  style={{ color:'green'}}>
                 <p>{props.userInfo.email}</p>
                 <p>{props.userInfo.gen}</p>
               

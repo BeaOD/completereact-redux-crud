@@ -1,0 +1,14 @@
+input{
+    border-radius: 7px;
+    width: 300px;
+   
+}
+form{
+    margin-left: 20px;
+
+}
+button{
+    background-color: aquamarine;
+    border-radius: 7px;
+    
+}

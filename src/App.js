@@ -46,11 +46,11 @@ class App extends Component {
           <Col md='4'>
             {/*passing the whole method as props to AddUserForm. NB you can pass anything as props to a component*/}
             {/*you can choose any prop name. Here we used addUser*/}
-            <h4>Add User</h4>
+            <h4 style={{marginLeft:'20px', marginBottom:'30px'}}>ADD USER</h4>
             <AddUserForm addUser= {this.addNewUser}/>
           </Col>
           <Col >
-          <h1> User Details</h1>
+          <h1 style={{textAlign:'center'}}>  DETAILS</h1>
           <Users usersData={this.props.users} 
           deleteUser={this.deleteUser} 
           editUser={this.editUser}
